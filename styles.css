@@ -1,0 +1,232 @@
+/* Color Palette:
+   1. Warm Cream (Background): #f9f6f0
+   2. Deep Forest Green (Primary Brand): #1b4332
+   3. Amber Gold (Accent & Highlights): #d97706
+   4. Charcoal (Body Text): #2d3748
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #2d3748;
+    background-color: #f9f6f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1b4332;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.75rem auto;
+}
+
+h1, h2, legend {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d97706;
+}
+
+/* Main Content Layout */
+main {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1b4332;
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #d97706;
+    padding-bottom: 0.35rem;
+}
+
+p, ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+/* Media Handling */
+img, audio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem auto;
+}
+
+figure {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Form Styles */
+fieldset {
+    border: 2px solid #1b4332;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    background-color: #ffffff;
+}
+
+legend {
+    color: #1b4332;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 0.85rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f9f6f0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #d97706;
+    background-color: #ffffff;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.25rem;
+    background-color: #1b4332;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d97706;
+}
+
+/* Footer */
+footer {
+    background-color: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsive Media Query for Desktops and Tablets */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2.5rem;
+        text-align: left;
+    }
+
+    header img {
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-size: 1.85rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 2.5rem 1.5rem;
+    }
+
+    button[type="submit"] {
+        width: auto;
+        padding: 0.75rem 2rem;
+    }
+}
