@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Cities Animal Rescue - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="rescue-logo_c.png" alt="Twin Cities Animal Rescue logo">
+        <h1>Contact & Inquiry Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services & Programs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Get Involved Today</h2>
+            <p>Please complete the form below to submit inquiries regarding volunteering, fostering, or general adoption information.</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Volunteer, Foster, and Adoption Interest</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="interest">Interest Type:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="foster">Foster</option>
+                        <option value="adoption">Adoption Information</option>
+                    </select>
+                    
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, weekday evenings" required>
+                    
+                    <label for="experience">Experience with Pets:</label>
+                    <textarea id="experience" name="experience" rows="4" placeholder="Briefly describe your past experience caring for pets..." required></textarea>
+                    
+                    <label for="message">Short Message:</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Any additional questions or comments..."></textarea>
+                    
+                    <button type="submit">Submit Inquiry</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Service Area & Office Hours</h2>
+            <p><strong>Service Area:</strong> Greater Twin Cities metropolitan area and surrounding communities.</p>
+            <p><strong>Office Hours:</strong> Monday through Saturday, 10:00 AM – 6:00 PM.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Twin Cities Animal Rescue. All rights reserved.</p>
+    </footer>
+</body>
+</html>
