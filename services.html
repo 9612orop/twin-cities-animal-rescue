@@ -22,25 +22,41 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
+        <!-- Interactive Adoptable Pets Directory (Rubric Feature) -->
+        <section id="interactive-directory">
+            <h2>Available Animals for Adoption</h2>
+            <p>Filter through our currently available rescue animals and save your favorites to review later.</p>
+            
+            <div class="filter-controls" role="group" aria-label="Pet filters">
+                <button type="button" class="filter-btn active" data-filter="all">All Animals</button>
+                <button type="button" class="filter-btn" data-filter="dog">Dogs</button>
+                <button type="button" class="filter-btn" data-filter="cat">Cats</button>
+            </div>
+
+            <div id="pets-container" class="pets-grid">
+                <!-- Injected dynamically by JavaScript -->
+            </div>
+        </section>
+
         <section>
             <h2>Adoption Process Overview</h2>
             <p>Our structured adoption process ensures a lifelong match between each animal's personality and your household environment.</p>
             <img src="rescue-pet_c.png" alt="An adoptable rescue puppy looking attentively toward the camera">
         </section>
-        
+
         <section>
             <h2>Foster Program Overview</h2>
             <p>Temporary foster homes save vulnerable lives by offering shelter, warmth, and socialization while animals recover or await permanent placement.</p>
         </section>
-        
+
         <section>
             <h2>Volunteer Roles</h2>
             <p>Volunteers are the backbone of our operation, assisting with daily kennel duties, behavioral socialization, and public adoption fairs.</p>
             <img src="rescue-volunteer_c.png" alt="Volunteers working together to care for shelter rescue animals">
         </section>
-        
+
         <section>
             <h2>Pet Spotlight</h2>
             <figure>
@@ -49,9 +65,12 @@
             </figure>
         </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2026 Twin Cities Animal Rescue. All rights reserved.</p>
+        <p>© 2026 Twin Cities Animal Rescue. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript Inclusion -->
+    <script src="script.js"></script>
 </body>
 </html>
