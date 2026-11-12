@@ -84,7 +84,7 @@ section {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -196,6 +196,93 @@ footer {
     margin-top: auto;
 }
 
+/* ==========================================================================
+   Touchstone 4 Additions: Interactive Filters & Form Validation
+   ========================================================================== */
+
+/* Filter Controls */
+.filter-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #ffffff;
+    border: 2px solid #1b4332;
+    color: #1b4332;
+    padding: 0.45rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #1b4332;
+    color: #ffffff;
+}
+
+/* Pets Dynamic Grid */
+.pets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pet-card {
+    border: 1px solid #cbd5e0;
+    border-left: 4px solid #d97706;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #fdfcf9;
+}
+
+.pet-card h3 {
+    color: #1b4332;
+    margin-bottom: 0.4rem;
+}
+
+.favorite-btn {
+    background-color: transparent;
+    border: 1px solid #d97706;
+    color: #d97706;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.favorite-btn:hover,
+.favorite-btn.saved {
+    background-color: #d97706;
+    color: #ffffff;
+}
+
+/* Form Validation Feedback */
+.error-message {
+    color: #c53030;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.success-message {
+    background-color: #e6fffa;
+    color: #234e52;
+    border: 1px solid #38b2ac;
+    padding: 0.85rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
 /* Responsive Media Query for Desktops and Tablets */
 @media (min-width: 768px) {
     header {
@@ -228,5 +315,9 @@ footer {
     button[type="submit"] {
         width: auto;
         padding: 0.75rem 2rem;
+    }
+
+    .pets-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
